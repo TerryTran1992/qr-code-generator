@@ -26,14 +26,14 @@ function showError(message) {
     errorMessage.textContent = message;
     errorMessage.classList.remove('hidden');
     urlInput.classList.add('border-red-500');
-    urlInput.classList.remove('border-gray-300');
+    urlInput.classList.remove('border-gray-700');
 }
 
 // Hide Error Message
 function hideError() {
     errorMessage.classList.add('hidden');
     urlInput.classList.remove('border-red-500');
-    urlInput.classList.add('border-gray-300');
+    urlInput.classList.add('border-gray-700');
 }
 
 // Generate QR Code

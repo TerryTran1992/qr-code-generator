@@ -1,4 +1,36 @@
-/* Custom Styles for QR Code Generator */
+/* Custom Styles for QR Code Generator - Saigon Technology Theme */
+
+/* Font Family */
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Dark Background with Tech Pattern */
+.bg-dark-pattern {
+    background-color: #0a0e1a;
+    background-image: 
+        radial-gradient(circle at 20% 50%, rgba(164, 214, 94, 0.05) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(164, 214, 94, 0.05) 0%, transparent 50%),
+        radial-gradient(circle at 40% 20%, rgba(59, 130, 246, 0.03) 0%, transparent 50%);
+    background-attachment: fixed;
+}
+
+/* Dark Navigation */
+.bg-dark-nav {
+    background-color: rgba(10, 14, 26, 0.95);
+    backdrop-filter: blur(10px);
+}
+
+/* Card Dark Background */
+.bg-card-dark {
+    background: linear-gradient(135deg, rgba(30, 41, 59, 0.5) 0%, rgba(15, 23, 42, 0.5) 100%);
+    backdrop-filter: blur(10px);
+}
+
+/* Logo Styling */
+.logo-container {
+    text-align: left;
+}
 
 /* Smooth fade-in animation */
 @keyframes fadeIn {
@@ -18,22 +50,30 @@
 
 /* QR Code Container Styling */
 .qr-container {
-    padding: 1.5rem;
-    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    padding: 2rem;
+    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
     border-radius: 1rem;
     display: inline-block;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 0 40px rgba(164, 214, 94, 0.1);
+    border: 1px solid rgba(164, 214, 94, 0.2);
 }
 
 .qr-container canvas {
     border-radius: 0.5rem;
     display: block !important;
     margin: 0 auto;
+    padding: 1rem;
+    background: white;
 }
 
 /* Input focus glow effect */
 input:focus {
-    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+    box-shadow: 0 0 0 3px rgba(164, 214, 94, 0.1);
+}
+
+/* Shadow effects */
+.shadow-lime {
+    box-shadow: 0 0 40px rgba(164, 214, 94, 0.15);
 }
 
 /* Button hover effects */
@@ -118,16 +158,16 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-    background: #f1f1f1;
+    background: #0a0e1a;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: linear-gradient(180deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(180deg, #a4d65e 0%, #7fb83d 100%);
     border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(180deg, #5568d3 0%, #6a3f8f 100%);
+    background: linear-gradient(180deg, #b8e672 0%, #8fc94d 100%);
 }
 
 /* Print styles */
@@ -136,13 +176,51 @@ html {
         background: white;
     }
     
-    header, footer, button {
+    nav, footer, button {
         display: none;
     }
     
     #qrCodeCard {
         box-shadow: none;
         border: 1px solid #ddd;
+        background: white;
     }
+}
+
+/* Additional Saigon Technology Branding */
+.text-lime-400 {
+    color: #a4d65e;
+}
+
+.text-lime-500 {
+    color: #a4d65e;
+}
+
+.bg-lime-500 {
+    background-color: #a4d65e;
+}
+
+.bg-lime-600 {
+    background-color: #8fc94d;
+}
+
+.hover\:bg-lime-600:hover {
+    background-color: #8fc94d;
+}
+
+.hover\:text-lime-400:hover {
+    color: #b8e672;
+}
+
+.border-lime-500 {
+    border-color: #a4d65e;
+}
+
+.ring-lime-500\/20 {
+    --tw-ring-color: rgba(164, 214, 94, 0.2);
+}
+
+.ring-lime-500\/50 {
+    --tw-ring-color: rgba(164, 214, 94, 0.5);
 }
 
